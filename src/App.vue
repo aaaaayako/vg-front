@@ -6,9 +6,11 @@
 
 <script>
 import 'normalize.css';
+import store from './store/';
 
 export default {
   name: 'App',
+  store,
 };
 </script>
 
@@ -24,5 +26,15 @@ export default {
   padding: 20px;
   max-width: 375px;
   margin: 50px auto;
+}
+
+.contents {
+  text-align: center;
+}
+
+.link-area {
+  text-decoration: none;
+  color: #2c3e50;
+  margin: 0 auto;
 }
 </style>
