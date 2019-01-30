@@ -8,13 +8,13 @@
         <h2 class="title">what's バレンタインガチャ</h2>
         <p class="description">バレンタインガチャの概要のテキストが入るよ。ここはプロの心の叫びを思いっきり書きたいね。<br>エモい文章入れてこう！</p>
       </div>
-      <router-link to="/EntryForm" class="link-area">
+      <router-link to="/EntryComplete" class="link-area">
         <div class="box--button">
           <div>チョコが欲しいあなた</div>
           <div>Check！</div>
         </div>
       </router-link>
-      <router-link to="/Gacha" class="link-area">
+      <router-link to="/EntryForm" class="link-area">
         <div class="box--button">
           <div>チョコをあげたいあなた</div>
           <div>Check！</div>
@@ -37,10 +37,6 @@ h2 {
   font-weight: normal;
 }
 
-.contents {
-  text-align: center;
-}
-
 .about-vg {
   padding-bottom: 20px;
 }
@@ -53,12 +49,6 @@ h2 {
   line-height: 1.8;
 }
 
-.link-area {
-  text-decoration: none;
-  color: #2c3e50;
-  margin: 0 auto;
-}
-
 .box--button {
   border: 1px solid #777;
   width: 200px;
@@ -66,5 +56,6 @@ h2 {
   padding: 20px;
   text-align: left;
   line-height: 1.8;
+  border-radius: 4px;
 }
 </style>
