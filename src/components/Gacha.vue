@@ -1,8 +1,11 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Gacha</h2>
-    <router-link to="/Result">Result</router-link>
+  <div class="page-wrapper">
+    <div class="contents">
+      <div>
+        <p>{{ time }}</p>
+        <img src="../assets/giphy.gif" alt="ガチャアニメーション" width="250" height="150">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -10,27 +13,24 @@
 export default {
   name: 'Gacha',
   data() {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-    };
+    return { time: 5 };
+  },
+  created() {
+    setInterval(() => { this.time -= 1; }, 1000);
+  },
+  watch: {
+    time(limit) {
+      if (limit <= 0) {
+        this.$router.push('/Result');
+      }
+    },
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h2 {
   font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
