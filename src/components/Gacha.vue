@@ -13,7 +13,7 @@
 export default {
   name: 'Gacha',
   data() {
-    return { time: 5 };
+    return { time: 3 };
   },
   created() {
     setInterval(() => { this.time -= 1; }, 1000);
