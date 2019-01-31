@@ -30,7 +30,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .entry-button {
-  border: 1px solid #777;
+  border: 1px solid #2c3e50;;
   width: 250px;
   margin: 0 auto;
   padding: 20px;
@@ -44,7 +44,7 @@ export default {
   font-size: 14px;
   width: 250px;
   height: 40px;
-  border: 2px solid #777;
+  border: 2px solid #2c3e50;;
   border-radius: 4px;
 }
 </style>

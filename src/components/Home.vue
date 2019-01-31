@@ -8,12 +8,13 @@
         <h2 class="title">what's バレンタインガチャ</h2>
         <p class="description">バレンタインガチャの概要のテキストが入るよ。ここはプロの心の叫びを思いっきり書きたいね。<br>エモい文章入れてこう！</p>
       </div>
-      <router-link to="/EntryComplete" class="link-area">
+      <a href="https://join.slack.com/t/w1548473530-f2v719310/shared_invite/enQtNTMzMTgwMjU0NDAwLTAwMTcxNTcyYTcxMjQ4MzAxZjA0ZWU2ZWViMTcwY2NkOTk0OGY4NWQ5Nzg5YTJiNGM1YWJlMjU0YjA5MWZiMDM" class="link-area" target="_blank">
         <div class="box--button">
           <div>チョコが欲しいあなた</div>
+          <div>Slackに飛ぶよ</div>
           <div>Check！</div>
         </div>
-      </router-link>
+      </a>
       <router-link to="/EntryForm" class="link-area">
         <div class="box--button">
           <div>チョコをあげたいあなた</div>
@@ -50,7 +51,7 @@ h2 {
 }
 
 .box--button {
-  border: 1px solid #777;
+  border: 1px solid #2c3e50;;
   width: 200px;
   margin: 0 auto 40px;
   padding: 20px;
