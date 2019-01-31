@@ -24,7 +24,9 @@ export default {
   },
   methods: {
     post() {
-      this.$store.dispatch('post', store.getters.fullName);
+      // CORSエラー解決したらこっち
+      // this.$store.dispatch('post', store.getters.fullName);
+      this.$store.dispatch('post');
     },
   },
   beforeMount() {
