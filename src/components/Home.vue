@@ -8,7 +8,7 @@
         <h2 class="title">what's バレンタインガチャ</h2>
         <p class="description">バレンタインガチャの概要のテキストが入るよ。ここはプロの心の叫びを思いっきり書きたいね。<br>エモい文章入れてこう！</p>
       </div>
-      <a href="https://join.slack.com/t/w1548473530-f2v719310/shared_invite/enQtNTMzMTgwMjU0NDAwLTAwMTcxNTcyYTcxMjQ4MzAxZjA0ZWU2ZWViMTcwY2NkOTk0OGY4NWQ5Nzg5YTJiNGM1YWJlMjU0YjA5MWZiMDM" class="link-area" target="_blank">
+      <a href="https://slack.com/signin" class="link-area" target="_blank">
         <div class="box--button">
           <div>チョコが欲しいあなた</div>
           <div>Slackに飛ぶよ</div>
