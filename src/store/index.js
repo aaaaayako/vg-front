@@ -33,7 +33,6 @@ const store = new Vuex.Store({
       commit('setFullName', { fullName });
     },
     post({ commit }, fullName) {
-      // CORSエラー解決したらこっち
       const options = {
         method: 'POST',
         headers: {
@@ -43,16 +42,14 @@ const store = new Vuex.Store({
         url: 'https://r17eo472bg.execute-api.ap-northeast-1.amazonaws.com/dev/users/random',
       };
       axios(options).then((res) => {
-        if (res.status === 200 && res.data.status === 'ok') {
-          commit('setPrizeWinner', { res });
+        if (res.status === 200) {
+          commit('setPrizeWinner', res);
         } else {
           throw new Error('レスポンスエラー');
         }
       }).catch((error) => {
         console.log(error);
       });
-      // test data
-      commit('setPrizeWinner', { data: { name: unescape('\u8352\u5ddd\u6dbc\u592a') } });
     },
   },
 });
