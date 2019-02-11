@@ -1,26 +1,29 @@
 <template>
-  <div class="page-wrapper">
+  <div class="">
     <div class="contents">
-      <div>
-        <img src="http://placehold.jp/250x150.png" alt="ロゴ">
+      <div class="title-bg">
+        <img src="../assets/vg-logo.png" alt="バレンタインガチャ" width="224" height="108">
       </div>
-      <div class="about-vg">
-        <h2 class="title">what's バレンタインガチャ</h2>
-        <p class="description">バレンタインガチャの概要のテキストが入るよ。ここはプロの心の叫びを思いっきり書きたいね。<br>エモい文章入れてこう！</p>
+      <div class="about-vg desc-bg">
+        <img src="../assets/whats-vg.png" alt="what's valentine gacha" width="206" height="45">
+        <p class="fwb">バレンタインガチャって？</p>
+        <p class="description fwb">バレンタインガチャの概要のテキストが入るよ。<br>
+        ここはプロの心の叫びを思いっきり書きたいね。<br>
+        エモい文章入れてこう！
+        </p>
       </div>
-      <a href="https://slack.com/signin" class="link-area" target="_blank">
-        <div class="box--button">
-          <div>チョコが欲しいあなた</div>
-          <div>Slackに飛ぶよ</div>
-          <div>Check！</div>
+      <div class="choose-bg">
+        <img src="../assets/choose.png" alt="choose" width="114" height="24">
+        <p class="fwb">あなたはどっち？</p>
+        <div class="button--box">
+          <a href="https://slack.com/signin" class="link-area" target="_blank">
+            <img src="../assets/btn_boy.png" alt="チョコが欲しい！" width="157" height="225">
+          </a>
+          <router-link to="/EntryForm" class="link-area">
+            <img src="../assets/btn_girl.png" alt="チョコをあげたい！" width="157" height="225">
+          </router-link>
         </div>
-      </a>
-      <router-link to="/EntryForm" class="link-area">
-        <div class="box--button">
-          <div>チョコをあげたいあなた</div>
-          <div>Check！</div>
-        </div>
-      </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -33,30 +36,60 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h2 {
-  font-size: inherit;
-  font-weight: normal;
+.title-bg {
+  background-color: #ffefd1;
+  padding: 32px 0 26px;
+  position: relative;
+}
+.title-bg::after {
+  content: '';
+  width: 124px;
+  height: 42px;
+  position: absolute;
+  bottom: -42px;
+  left: 0;
+  background-image: url(../assets/choco-white.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.desc-bg {
+  background-color: #ffaf9b;
+  padding: 23px 0;
+  position: relative;
+}
+
+.desc-bg::after {
+  content: '';
+  width: 124px;
+  height: 42px;
+  position: absolute;
+  bottom: -42px;
+  right: 0;
+  background-image: url(../assets/choco-pink.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.choose-bg {
+  background-color: #6a3906;
+  padding: 23px 0;
 }
 
 .about-vg {
   padding-bottom: 20px;
 }
 
-.title {
-  padding: 20px 0;
-}
-
 .description {
   line-height: 1.8;
 }
 
-.box--button {
-  border: 1px solid #2c3e50;;
-  width: 200px;
-  margin: 0 auto 40px;
-  padding: 20px;
-  text-align: left;
-  line-height: 1.8;
-  border-radius: 4px;
+.button--box {
+  width: 376px;
+  margin: 0 auto;
+  display: flex;
 }
+
 </style>
