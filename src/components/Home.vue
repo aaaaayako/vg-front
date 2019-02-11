@@ -51,7 +51,7 @@ export default {
   background-image: url(../assets/choco-white.png);
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 100;
+  z-index: 10;
 }
 
 .desc-bg {
@@ -70,7 +70,7 @@ export default {
   background-image: url(../assets/choco-pink.png);
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 100;
+  z-index: 10;
 }
 
 .choose-bg {
