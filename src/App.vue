@@ -22,7 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
-  background-color: #8e5d4b;
+  background-color: #ffaf9b;
   height: 100%;
 }
 
@@ -38,6 +38,13 @@ export default {
 
 .contents {
   text-align: center;
+}
+
+.contents-container {
+  width: 500px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin: 60px auto;
 }
 
 .link-area {
