@@ -22,7 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
-  background-color: #6a3906;
+  background-color: #8e5d4b;
   height: 100%;
 }
 
@@ -44,5 +44,11 @@ export default {
   text-decoration: none;
   color: #2c3e50;
   margin: 0 auto;
+}
+
+h1, h2 {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
 </style>
