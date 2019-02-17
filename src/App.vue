@@ -16,10 +16,18 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #fff;
+  background-color: #8e5d4b;
+  height: 100%;
+}
+
+.fwb {
+  font-weight: bold;
 }
 
 .page-wrapper {
@@ -36,5 +44,11 @@ export default {
   text-decoration: none;
   color: #2c3e50;
   margin: 0 auto;
+}
+
+h1, h2 {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
 </style>
