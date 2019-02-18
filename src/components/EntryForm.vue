@@ -22,7 +22,7 @@
           </div>
         </div>
         <router-link to="/Gacha" class="link-area">
-          <div class="entry-button">
+          <div class="entry-button" v-on:click="post()">
             ガチャを回す
           </div>
         </router-link>
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import store from '../store/';
+
 export default {
   name: 'EntryForm',
   data() {
@@ -46,7 +48,10 @@ export default {
   },
   methods: {
     doUpdate(event) {
-      this.$store.dispatch('doUpdate', event.target.value);
+      this.$store.dispatch('doUpdate', { fullName: event.target.value, chocoNumber: this.selectedNum });
+    },
+    post() {
+      this.$store.dispatch('post', { fullName: store.getters.fullName, chocoNumber: store.getters.chocoNumber });
     },
   },
 };
@@ -78,7 +83,7 @@ export default {
   font-weight: bold;
   width: 314px;
   height: 46px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
