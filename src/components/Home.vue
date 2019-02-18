@@ -10,10 +10,17 @@
     <section class="desc-bg">
       <div class="desc-bg-inner">
         <div class="section-wrapper">
-          <img class="whats-vg-img" src="../assets/whats-vg.png" alt="what's valentine gacha" width="260" height="58">
+          <img class="whats-vg-img"
+          src="../assets/whats-vg.png"
+          alt="what's valentine gacha"
+          width="260"
+          height="58">
           <h2 class="desc-title fwb">バレンタインガチャって？</h2>
           <p class="desc fwb">
-            ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要
+            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
+            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
+            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャ</span>
+            <span>の概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
           </p>
         </div>
       </div>

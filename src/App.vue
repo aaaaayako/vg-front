@@ -40,11 +40,26 @@ export default {
   text-align: center;
 }
 
+/* 各ページの白枠 */
 .contents-container {
   width: 500px;
   border-radius: 30px;
   background-color: #fff;
   margin: 60px auto;
+  position: relative;
+}
+
+.contents-container::after {
+  content: '';
+  width: 176px;
+  height: 58px;
+  position: absolute;
+  bottom: -58px;
+  right: 24px;
+  background-image: url(./assets/choco-fff.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .link-area {
