@@ -1,39 +1,44 @@
 <template>
-  <div class="">
-    <div class="contents">
-      <section class="title-bg">
-        <h1 class="title-bg-inner">
-          <div class="section-wrapper">
-            <img class="logo-img" src="../assets/vg-logo.png" alt="バレンタインガチャ">
-          </div>
-        </h1>
-      </section>
-      <section class="desc-bg">
-        <div class="desc-bg-inner">
-          <div class="section-wrapper">
-            <img class="whats-vg-img" src="../assets/whats-vg.png" alt="what's valentine gacha" width="260" height="58">
-            <h2 class="desc-title fwb">バレンタインガチャって？</h2>
-            <p class="desc fwb">
-              ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要
-            </p>
-          </div>
+  <div class="top contents">
+    <section class="title-bg">
+      <h1 class="title-bg-inner">
+        <div class="section-wrapper">
+          <img class="logo-img" src="../assets/vg-logo.png" alt="バレンタインガチャ">
         </div>
-      </section>
-      <section class="choose-bg">
-        <div>
-          <img src="../assets/choose.png" alt="choose" width="114" height="24">
-          <h2 class="fwb select-text">あなたはどっち？</h2>
-          <div class="button--box">
-            <a class="link-area boy-box" href="https://join.slack.com/t/valentine-gacha/shared_invite/enQtNTQwNTY0Njk5MDEyLWExYTI1ZTZhZTQxODQyMzI0Yzc0ZDgyZDkzYmZlOGZmOTlkZWNmZmM3YThjNmRhMjY1ZDY0MzdjYTMyZmNmYzk" target="_blank">
-              <img src="../assets/btn-boy.png" alt="チョコが欲しい！" width="157" height="225">
-            </a>
-            <router-link to="/EntryForm" class="link-area girl-box">
-              <img src="../assets/btn-girl.png" alt="チョコをあげたい！" width="157" height="225">
-            </router-link>
-          </div>
+      </h1>
+    </section>
+    <section class="desc-bg">
+      <div class="desc-bg-inner">
+        <div class="section-wrapper">
+          <img class="whats-vg-img"
+          src="../assets/whats-vg.png"
+          alt="what's valentine gacha"
+          width="260"
+          height="58">
+          <h2 class="desc-title fwb">バレンタインガチャって？</h2>
+          <p class="desc fwb">
+            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
+            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
+            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャ</span>
+            <span>の概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
+          </p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="choose-bg">
+      <div>
+        <img src="../assets/choose.png" alt="choose" width="114" height="24">
+        <h2 class="fwb select-text">あなたはどっち？</h2>
+        <div class="button--box">
+          <a class="link-area boy-box" href="https://join.slack.com/t/valentine-gacha/shared_invite/enQtNTQwNTY0Njk5MDEyLWExYTI1ZTZhZTQxODQyMzI0Yzc0ZDgyZDkzYmZlOGZmOTlkZWNmZmM3YThjNmRhMjY1ZDY0MzdjYTMyZmNmYzk" target="_blank">
+            <img src="../assets/btn-boy.png" alt="チョコが欲しい！" width="157" height="225">
+          </a>
+          <router-link to="/EntryForm" class="link-area girl-box">
+            <img src="../assets/btn-girl.png" alt="チョコをあげたい！" width="157" height="225">
+          </router-link>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -45,6 +50,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.top {
+  background-color: #8e5d4b;
+  width: 100vw;
+  height: 100vh;
+}
+
 .logo-img {
   width: 308px;
   height: 154px;
