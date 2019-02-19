@@ -1,9 +1,8 @@
 <template>
-  <div class="page-wrapper">
-    <div class="contents">
-      <div>
-        <p>{{ time }}</p>
-        <img src="../assets/giphy.gif" alt="ガチャアニメーション" width="250" height="150">
+  <div class="entry-form-container contents">
+    <div class="contents-container">
+      <div class="gif-wrapper">
+        <img src="../assets/giphy.gif" alt="ガチャアニメーション" width="400" height="300">
       </div>
     </div>
   </div>
@@ -13,7 +12,7 @@
 export default {
   name: 'Gacha',
   data() {
-    return { time: 3 };
+    return { time: 7 };
   },
   created() {
     setInterval(() => { this.time -= 1; }, 1000);
@@ -32,5 +31,9 @@ export default {
 <style scoped>
 h2 {
   font-weight: normal;
+}
+
+.gif-wrapper {
+  padding: 80px 0;
 }
 </style>

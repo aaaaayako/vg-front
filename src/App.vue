@@ -22,7 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
-  background-color: #8e5d4b;
+  background-color: #ffaf9b;
   height: 100%;
 }
 
@@ -38,6 +38,28 @@ export default {
 
 .contents {
   text-align: center;
+}
+
+/* 各ページの白枠 */
+.contents-container {
+  width: 500px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin: 60px auto;
+  position: relative;
+}
+
+.contents-container::after {
+  content: '';
+  width: 176px;
+  height: 58px;
+  position: absolute;
+  bottom: -58px;
+  right: 24px;
+  background-image: url(./assets/choco-fff.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .link-area {
