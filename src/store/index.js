@@ -8,7 +8,7 @@ const store = new Vuex.Store({
   state: {
     fullName: '',
     chocoNumber: 1,
-    prizeWinner: '',
+    prizeWinner: [],
     createdChannelUrl: '',
   },
 
@@ -41,9 +41,11 @@ const store = new Vuex.Store({
   },
 
   actions: {
-    doUpdate({ commit }, { fullName, chocoNumber }) {
+    doUpdate({ commit }, { fullName }) {
       commit('setFullName', { fullName });
-      commit('setchocoNumber', { chocoNumber });
+    },
+    doUpdateNum({ commit }, { chocoNumber }) {
+      commit('setChocoNumber', { chocoNumber });
     },
     post({ commit }, { fullName, chocoNumber }) {
       const options = {
@@ -51,9 +53,10 @@ const store = new Vuex.Store({
         headers: {
           'Content-Type': 'application/json',
         },
-        data: JSON.stringify({ name: fullName, number: chocoNumber }),
+        data: JSON.stringify({ name: fullName, number: parseInt(chocoNumber, 10) }),
         url: 'https://r17eo472bg.execute-api.ap-northeast-1.amazonaws.com/dev/users/random',
       };
+      console.log(options);
       axios(options).then((res) => {
         if (res.status === 200) {
           commit('setPrizeWinner', res);

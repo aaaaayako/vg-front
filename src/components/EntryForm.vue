@@ -16,13 +16,13 @@
         <div>
           <label for="choco-number">余っているチョコの数</label>
           <div class="select-num">
-            <select v-model="selectedNum" id="choco-number" class="input-text">
+            <select @change="doUpdateNum" v-model="selectedNum" id="choco-number" class="input-text">
               <option class="option" v-for="n in 100" :value="n" :key="n">{{ n }}</option>
             </select>
           </div>
         </div>
         <router-link to="/Gacha" class="link-area">
-          <div class="entry-button" v-on:click="post()">
+          <div class="entry-button" v-on:click="post">
             ガチャを回す
           </div>
         </router-link>
@@ -48,7 +48,10 @@ export default {
   },
   methods: {
     doUpdate(event) {
-      this.$store.dispatch('doUpdate', { fullName: event.target.value, chocoNumber: this.selectedNum });
+      this.$store.dispatch('doUpdate', { fullName: event.target.value });
+    },
+    doUpdateNum(event) {
+      this.$store.dispatch('doUpdateNum', { chocoNumber: event.target.value });
     },
     post() {
       this.$store.dispatch('post', { fullName: store.getters.fullName, chocoNumber: store.getters.chocoNumber });

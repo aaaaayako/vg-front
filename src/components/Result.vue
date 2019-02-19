@@ -3,12 +3,12 @@
     <div class="contents-container">
       <div class="result-wrapper">
         <div class="frame">
-          <ul>
+          <ul class="prize-winner-list">
             <li v-for="(person, index) in prizeWinner" class="prize-winner" :key="index">{{ person }}さん</li>
           </ul>
         </div>
         <p class="slack-desc">さあ、当選者にはslackをもう送っているよ！<br>早速やりとりを初めてね♡</p>
-        <a v-bind:href="channelUrl" class="top-button link-area">slackへ</a>
+        <a v-bind:href="channelUrl" class="top-button link-area" target="_blank">slackへ</a>
         <router-link to="/" class="top-button link-area">topへ</router-link>
       </div>
     </div>
@@ -71,6 +71,10 @@ ul, li {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 10;
+}
+
+.prize-winner-list {
+  line-height: 1.8;
 }
 
 .prize-winner {
