@@ -16,7 +16,10 @@
         <div>
           <label for="choco-number">余っているチョコの数</label>
           <div class="select-num">
-            <select @change="doUpdateNum" v-model="selectedNum" id="choco-number" class="input-text">
+            <select @change="doUpdateNum"
+            v-model="selectedNum"
+            id="choco-number"
+            class="input-text">
               <option class="option" v-for="n in 100" :value="n" :key="n">{{ n }}</option>
             </select>
           </div>
