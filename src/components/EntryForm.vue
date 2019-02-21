@@ -11,7 +11,8 @@
         <p class="choco-presenter-desc">とっても親切なあなた・・・<br>あなたの事を教えてね♡</p>
         <div>
           <label for="full-name">フルネーム</label>
-          <input @input="doUpdate" id="full-name" class="input-text" placeholder="ex) 荒川涼太">
+          <input @input="doUpdate" id="full-name"
+          class="input-text" placeholder="ex) 荒川涼太" type="text">
         </div>
         <div>
           <label for="choco-number">余っているチョコの数</label>
@@ -140,5 +141,11 @@ select:hover {
   top: 32px;
   right: 56px;
   z-index: 10;
+}
+
+/* フォーム要素にフォーカスした時のアウトラインの色を変更 */
+input:focus, select:focus {
+  outline: none;
+  border: 1px solid #ffaf9b;
 }
 </style>
