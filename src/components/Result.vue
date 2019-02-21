@@ -4,7 +4,9 @@
       <div class="result-wrapper">
         <div class="frame">
           <ul class="prize-winner-list">
-            <li v-for="(person, index) in prizeWinner" class="prize-winner" :key="index">{{ person }}さん</li>
+            <li v-for="(person, index) in prizeWinner"
+            class="prize-winner"
+            :key="index">{{ person }}さん</li>
           </ul>
         </div>
         <p class="slack-desc">さあ、当選者にはslackをもう送っているよ！<br>早速やりとりを初めてね♡</p>
