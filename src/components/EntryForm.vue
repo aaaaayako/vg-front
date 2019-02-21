@@ -16,7 +16,10 @@
         <div>
           <label for="choco-number">余っているチョコの数</label>
           <div class="select-num">
-            <select @change="doUpdateNum" v-model="selectedNum" id="choco-number" class="input-text">
+            <select @change="doUpdateNum"
+            v-model="selectedNum"
+            id="choco-number"
+            class="input-text">
               <option class="option" v-for="n in 100" :value="n" :key="n">{{ n }}</option>
             </select>
           </div>
@@ -75,7 +78,7 @@ export default {
 .choco-presenter-desc {
   line-height: 1.7;
   font-size: 16px;
-  padding: 44px 0;
+  padding: 6px 0 12px;
 }
 
 .entry-button {
@@ -90,6 +93,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 .input-text {
