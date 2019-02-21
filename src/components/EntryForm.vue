@@ -78,7 +78,7 @@ export default {
 .choco-presenter-desc {
   line-height: 1.7;
   font-size: 16px;
-  padding: 44px 0;
+  padding: 6px 0 12px;
 }
 
 .entry-button {
@@ -93,6 +93,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 .input-text {
