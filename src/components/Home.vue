@@ -17,10 +17,10 @@
           height="58">
           <h2 class="desc-title fwb">バレンタインガチャって？</h2>
           <p class="desc fwb">
-            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
-            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
-            <span>ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャ</span>
-            <span>の概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要ガチャの概要</span>
+            <span>バレンタインガチャのミッションは、この世のバレンタイン格差を駆逐すること。</span>
+            <span>社内のチョコが欲しい人とチョコを余らせている人をマッチングし、チョコを渡すやりとりまで導くサービスです。</span>
+            <span>まずはバレンタインガチャのSlackワークスペースに参加してね♡</span><br><br>
+            <span>チョコが欲しい！あなたはバレンタインガチャのSlackワークスペースでチョコが当たるまで待機していてね。チョコをあげたい！あなたは下のボタンからガチャを回してみよう。</span>
           </p>
         </div>
       </div>
@@ -31,10 +31,10 @@
         <h2 class="fwb select-text">あなたはどっち？</h2>
         <div class="button--box">
           <a class="link-area boy-box" href="https://join.slack.com/t/valentine-gacha/shared_invite/enQtNTQwNTY0Njk5MDEyLWExYTI1ZTZhZTQxODQyMzI0Yzc0ZDgyZDkzYmZlOGZmOTlkZWNmZmM3YThjNmRhMjY1ZDY0MzdjYTMyZmNmYzk" target="_blank">
-            <img src="../assets/btn-boy.png" alt="チョコが欲しい！" width="157" height="225">
+            <img src="../assets/btn-boy.png" alt="チョコが欲しい！" width="157">
           </a>
           <router-link to="/EntryForm" class="link-area girl-box">
-            <img src="../assets/btn-girl.png" alt="チョコをあげたい！" width="157" height="225">
+            <img src="../assets/btn-girl.png" alt="チョコをあげたい！" width="157">
           </router-link>
         </div>
       </div>
