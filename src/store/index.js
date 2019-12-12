@@ -55,7 +55,7 @@ const store = new Vuex.Store({
           'Content-Type': 'application/json',
         },
         data: JSON.stringify({ name: fullName, number: parseInt(chocoNumber, 10) }),
-        url: 'https://r17eo472bg.execute-api.ap-northeast-1.amazonaws.com/dev/users/random',
+        url: '',
       };
       await axios(options).then((res) => {
         if (res.status === 200) {
