@@ -1,6 +1,8 @@
 # vg-front
+This is the code for the front end of the service called Valentine Gacha
 
-> A Vue.js project
+## What is Valentine Gacha
+This service matches people who want chocolate and those who want to give it to someone on Valentine's Day in Slack channel.
 
 ## Build Setup
 
