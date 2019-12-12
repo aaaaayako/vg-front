@@ -64,6 +64,7 @@ const store = new Vuex.Store({
           throw new Error('レスポンスエラー');
         }
       }).catch((error) => {
+        // eslint-disable-next-line no-console
         console.log(error);
       });
       router.push('/Result');
